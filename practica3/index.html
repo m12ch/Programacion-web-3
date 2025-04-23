@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Marcelo Alvaro Chambi Chillo</h3>
+    <h1>CRUD LIBROS</h1>
+    <div class="central">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="number" id="precio" placeholder="Precio">
+        <button onclick="agregar()">Agregar</button>
+        <br><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Autor</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="libros"></tbody>
+
+        </table>
+    </div>
+    
+    <script src="modelo.js"></script>
+    
+</body>
+</html>
