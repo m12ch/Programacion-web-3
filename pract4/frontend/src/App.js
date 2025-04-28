@@ -131,7 +131,7 @@ function App() {
   /*FUNCION PARA EDITAR*/
   const editarLib = async(e) =>{
     e.preventDefault();
-    if(!FormularioEditar.titulo.trim() || !FormularioEditar.autor.trim() || !FormularioEditar.genero.trim() || !FormularioEditar.anio_publicacion.trim()){
+    if(!FormularioEditar.titulo.trim() || !FormularioEditar.autor.trim() || !FormularioEditar.genero.trim() || !FormularioEditar.anio_publicacion.toString().trim()){
       Swal.fire({
         title: "Por Favor Complete los campos",
         text: "No se puede dejar campos vacios",
