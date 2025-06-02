@@ -1,0 +1,96 @@
+ 
+.titulo-admin{
+  color: #212529;
+  font-family: 'Roboto', sans-serif;
+}
+.App {
+  text-align: center;
+  padding: 30px;
+  
+}
+.tabla{
+  padding: 40px;
+}
+/*diseño tabla*/
+table {
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s ease-in-out;
+}
+
+th {
+  background-color: #0077b6;
+  color: white;
+}
+
+td, th {
+  padding: 12px 15px;
+  text-align: center;
+}
+/*diseño botones*/
+button {
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+.boton-crear {
+  background-color: #39ff14;
+  color: #000;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #39ff14;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 20px; /* Espacio con la tabla */
+}
+
+.boton-crear:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #39ff14;
+  cursor: pointer;
+}
+
+.boton-editar {
+  background-color: #00f0ff;
+  color: #000;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #00f0ff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-right: 8px;
+}
+
+.boton-editar:hover {
+  transform: scale(1.03);
+  background-color: #03c2cf;
+  box-shadow: 0 0 10px #00f0ff;
+  cursor: pointer;
+}
+
+.boton-eliminar {
+  background-color: #ff073a;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #ff073a;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-eliminar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #ff073a;
+  cursor: pointer;
+}

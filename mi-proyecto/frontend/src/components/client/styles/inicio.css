@@ -1,0 +1,376 @@
+/* Variables */
+:root {
+  --primary: #25D366; /* Color principal (verde WhatsApp) */
+  --secondary: #128C7E; /* Color secundario */
+  --dark: #333333; /* Texto oscuro */
+  --light: #f9f9f9; /* Fondo claro */
+  --white: #ffffff;
+}
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Estilos para todas las secciones */
+section {
+  padding: 60px 20px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--secondary);
+  font-size: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://images.unsplash.com/photo-1483985988355-763728e1935b') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté sobre la imagen */
+  max-width: 800px;
+  padding: 20px;
+  margin-top: 80px; /* Espacio para el menú */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  width: 70%;
+  max-width: 500px;
+  padding: 15px;
+  border: 2px solid #25D366;  /* Borde verde WhatsApp */
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  outline: none; /* Elimina el borde predeterminado al enfocar */
+  transition: border-color 0.3s ease; /* Transición suave */
+}
+.search-bar input:focus {
+  border-color: #128C7E; /* Verde más oscuro al enfocar */
+  box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2); /* Sutil sombra exterior */
+}
+.search-bar button {
+  background: var(--primary);
+  color: white;
+  border: 2px solid #25D366;
+  padding: 0 25px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.search-bar button:hover {
+  border-color: #128C7E; /* Verde más oscuro al enfocar */
+  box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2); /* Sutil sombra exterior */
+}
+
+/* Business Model */
+.business-model {
+  background: var(--light);
+}
+
+.model-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card .icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: var(--secondary);
+}
+
+/* Featured Sellers */
+.featured-sellers {
+  background: var(--white);
+}
+
+.seller-card {
+  padding: 20px;
+  margin: 10px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.seller-card:hover {
+  transform: scale(1.03);
+}
+
+.seller-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.seller-whatsapp {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center; 
+  gap: 8px; 
+  margin: 15px auto 0; 
+  padding: 6px 12px; 
+  background: var(--primary);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.9rem; 
+  max-width: max-content; 
+}
+
+.seller-whatsapp:hover {
+  background: var(--secondary);
+}
+
+/* Process Steps */
+/* Process Steps */
+.process-steps {
+  background: var(--light);
+  text-align: center; /* Centra el título h2 */
+  padding: 40px 20px; /* Añade espacio interno */
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinea los items en la parte superior */
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 1200px; /* Limita el ancho máximo */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 30px 20px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Centra el texto */
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centra el icono horizontalmente */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.step p {
+  margin: 0; /* Elimina márgenes por defecto del párrafo */
+}
+
+/* Testimonials */
+.testimonials {
+  background: var(--white);
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.testimonial {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 30px;
+  background: var(--light);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+
+/* Newsletter */
+.newsletter {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.newsletter input {
+  width: 300px;
+  padding: 15px;
+  border: 2px solid var(--secondary);
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3 ease;
+}
+
+.newsletter button {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0 30px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background: var(--dark);
+}
+
+/* Floating WhatsApp Button */
+.float-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+  z-index: 1000;
+}
+
+.float-whatsapp:hover {
+  background-color: var(--secondary);
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .model-cards, .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seller-card {
+    max-width: 80%;
+  }
+}

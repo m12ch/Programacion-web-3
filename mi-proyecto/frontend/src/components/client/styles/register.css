@@ -1,0 +1,143 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  height: 75rem;
+}
+
+.register-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.input-group-genero {
+  margin-bottom: 1rem;
+}
+.input-group-genero label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+.input-group-genero input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.input-group input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.error {
+  color: #ff3333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.register-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #343a40; /* Verde para diferenciar del login */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #45a049;
+}
+
+.links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.links a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+.input-group-genero {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+
+
+.input-group-genero select {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #343a40; /* Fondo oscuro */
+  color: #f8f9fa; /* Texto claro */
+  border: 1px solid #4a5568; /* Borde sutil */
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none; /* Elimina el estilo por defecto */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23a0aec0' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+  
+}
+
+.input-group-genero select:focus {
+  outline: none;
+  border-color: #4299e1; /* Azul brillante para el focus */
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.3);
+}
+
+/* Estilo para las opciones */
+.input-group-genero option {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 10px;
+  
+}
+
+/* Efecto hover para las opciones */
+.input-group-genero option:hover {
+  background-color: #4a5568 !important;
+}

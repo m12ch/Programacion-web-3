@@ -1,0 +1,173 @@
+/* Estilos generales */
+.seccion-productos {
+  margin-top: 2%;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  min-height: 70vh;
+}
+
+.encabezado-seccion {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.encabezado-seccion h2 {
+  font-size: 2rem;
+  color: #212529;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.encabezado-seccion p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Loading y errores */
+.loading-container, .error-container, .sin-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+}
+
+.spinner {
+  font-size: 3rem;
+  color: #25D366;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  color: #dc3545;
+}
+
+.sin-productos {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+/* Grid de productos */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card de producto */
+.card-producto {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-producto-container {
+  height: 250px;
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: #f5f5f5; 
+}
+
+.imagen-producto {
+  max-width: 100%; 
+  max-height: 100%; 
+  width: auto; 
+  height: auto; 
+  object-fit: contain; 
+}
+.card-producto:hover .imagen-producto {
+  transform: scale(1.05);
+}
+
+.info-producto {
+  padding: 20px;
+  text-align: center;
+}
+
+.info-producto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #212529;
+  margin: 10px 0;
+}
+
+.vendedor {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+/* Botón de WhatsApp */
+.boton-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.boton-whatsapp:hover {
+  background-color: #128C7E;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-productos {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  
+  .imagen-producto-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-productos {
+    grid-template-columns: 1fr;
+  }
+  
+  .seccion-productos {
+    padding: 40px 15px;
+  }
+  
+  .encabezado-seccion h2 {
+    font-size: 1.8rem;
+  }
+}

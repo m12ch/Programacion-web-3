@@ -1,0 +1,83 @@
+.admin-navbar-container {
+  width: 100%;
+  background-color: #212529;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+.admin-navbar{
+  border-radius: 0 !important;
+}
+
+.admin-navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.admin-navbar-brand:hover {
+  color: #ffc107;
+}
+
+.admin-nav-link {
+  color: #ffffff !important;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.admin-nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.admin-logout-btn {
+  background-color: #dc3545;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.admin-logout-btn:hover {
+  background-color: #c82333;
+}
+.me-auto{
+   display: flex; 
+   gap: 10px;
+}
+/* Estilos para alinear iconos y texto */
+.admin-navbar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Ajuste específico para iconos */
+.admin-navbar .nav-link svg {
+  font-size: 1rem;
+  margin-bottom: 0.1rem; /* Ajuste fino para alineación vertical */
+}
+
+/* Efecto hover para los enlaces */
+.admin-navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Estilo para el botón de logout */
+.admin-navbar .logout-link {
+  color: rgba(255, 107, 107, 0.9);
+}
+
+.admin-navbar .logout-link:hover {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+}

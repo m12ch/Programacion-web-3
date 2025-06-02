@@ -1,0 +1,88 @@
+/* Estilo general del navbar */
+.divmenu{
+  padding: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Valor alto para que esté siempre encima */
+  padding: 10px;
+}
+.navbar {
+  height: auto;
+  background-color: #212529; /* Más oscuro que el dark default */
+  box-shadow: 0 2px 4px rgba(71, 46, 46, 0.4);
+  padding: 5px;
+  border-radius: 30px;
+}
+
+/* Icono + texto del menú */
+.menu-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+/* Texto de los botones */
+.menu-text {
+  font-weight: 500;
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover en enlaces del menú */
+.menu-hover:hover .menu-icon-text,
+.menu-hover:hover .menu-text {
+  color: #adb5bd; /* gris claro */
+  opacity: 1;
+}
+
+/* Ocultar la flecha de los dropdowns */
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Dropdown personalizado */
+.navbar .dropdown-menu {
+  background-color: rgba(52, 58, 64, 0.85); /* Mismo color con transparencia */
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 0.5rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+}
+
+.navbar .dropdown-item {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Efecto hover en el toggle */
+.navbar .dropdown-toggle:hover::after {
+  border-top-color: white;
+}
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .menu-text {
+    font-size: 0.95rem;
+  }
+
+  .menu-icon-text {
+    gap: 6px;
+  }
+
+  .navbar .dropdown-menu {
+    font-size: 0.95rem;
+  }
+}
