@@ -69,7 +69,7 @@ function Footer() {
           <div className="copyright">
             <p>
               © {currentYear} ModaGo. Todos los derechos reservados. 
-              Diseñado por <a href="https://www.linkedin.com/in/mchambi" target="_blank" rel="noopener noreferrer">Marcelo Chambi</a>
+              Diseñado por <a href="https://www.linkedin.com/in/mchambi" target="_blank" rel="noopener noreferrer">Marcelo Chambi Mch</a>
             </p>
           </div>
         </div>
