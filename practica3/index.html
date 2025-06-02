@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>LIBROS</h1>
+    <div class="central">
+        <input type="text" id="titulo" placeholder="Titulo">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="text" id="genero" placeholder="Genero">
+        <input type="number" id="anio_publicacion" placeholder="Año Publicacion">
+        <button onclick="agregar()">Agregar</button>
+        <br><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>Genero</th>
+                    <th>Año Publicacion</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="libros"></tbody>
+
+        </table>
+    </div>
+    
+    <script src="modelo.js"></script>
+    
+</body>
+</html>
